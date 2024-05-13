@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h2>Update UAV</h2>
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="brand">Brand:</label>
+      <input type="text" class="form-control" id="brand" name="brand" value="{{ uav.brand }}" required>
+    </div>
+    <div class="form-group">
+      <label for="model">Model:</label>
+      <input type="text" class="form-control" id="model" name="model" value="{{ uav.model }}" required>
+    </div>
+    <div class="form-group">
+      <label for="weight">Weight:</label>
+      <input type="text" class="form-control" id="weight" name="weight" value="{{ uav.weight }}" required>
+    </div>
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <input type="text" class="form-control" id="category" name="category" value="{{ uav.category }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update UAV</button>
+  </form>
+</div>
+{% endblock %}

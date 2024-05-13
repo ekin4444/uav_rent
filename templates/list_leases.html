@@ -1,0 +1,12 @@
+<h2>Leases for {{ uav.brand }} {{ uav.model }}</h2>
+<ul>
+    {% for lease in leases %}
+    <li>
+        {{ lease.start_date }} - {{ lease.end_date }}
+        <a href="{% url 'update_lease' pk=uav.pk lease_id=lease.pk %}">Update</a>
+        <a href="{% url 'delete_lease' pk=uav.pk lease_id=lease.pk %}">Delete</a>
+    </li>
+    {% empty %}
+    <li>No leases found.</li>
+    {% endfor %}
+</ul>

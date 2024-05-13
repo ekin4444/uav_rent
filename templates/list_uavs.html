@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h2>List of UAVs</h2>
+  <ul class="list-group">
+    {% for uav in uavs %}
+    <li class="list-group-item">{{ uav.brand }} {{ uav.model }} - {{ uav.category }}
+      <a href="{% url 'update_uav' uav.id %}" class="btn btn-primary btn-sm">Edit</a>
+      <a href="{% url 'delete_uav' uav.id %}" class="btn btn-danger btn-sm">Delete</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
