@@ -2,26 +2,30 @@ FROM ubuntu:latest
 LABEL authors="ekinf"
 
 ENTRYPOINT ["top", "-b"]
-# Use the official Python base image
-FROM python:3.9
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+FROM python:3.12-slim
 
-# Set the working directory in the container
-WORKDIR /app
+RUN apt-get update
 
-# Install dependencies
-COPY requirements.txt /app/
+RUN apt-get install python3-dev build-essential -y
+
+# pip requirements
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install virtualenv && python -m virtualenv /opt/venv
 
-# Copy the Django project into the container
-COPY . /app/
+ENV PATH="/opt/venv/bin:$PATH"
 
-# Expose the Django development server port
+ADD ./requirement.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+COPY . /srv/app
+WORKDIR /srv/app
+
+# Run migrations
+RUN python manage.py migrate
+
+# Expose port 8000 for the Django development server
 EXPOSE 8000
 
-# Run the Django development server
+# Start the Django development server
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

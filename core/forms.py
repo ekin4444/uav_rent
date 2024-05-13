@@ -51,6 +51,7 @@ class DonationForm(forms.Form):
     amount = forms.DecimalField(label='Amount', decimal_places=2)
     email = forms.EmailField(label='Email')
 
+
 class LoginForm(forms.Form):
     username = forms.CharField(label='Username', max_length=100)
     password = forms.CharField(label='Password', widget=forms.PasswordInput())
@@ -84,3 +85,4 @@ class Lease:
 
 class LeaseForm:
     pass
+
