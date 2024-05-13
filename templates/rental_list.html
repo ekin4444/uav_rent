@@ -1,15 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<body>
-    <h1>Rental List</h1>
-    <ul>
-        {% for rental in rentals %}
-            <li>{{ rental.uav.brand }} {{ rental.uav.model }} - {{ rental.user.username }}</li>
-        {% endfor %}
-    </ul>
-</body>
-
+<div class="container">
+  <h2>List of UAVs</h2>
+  {% if rental_record %}
+    <p>Rental Record: User {{ rental_record.user }} rented UAV {{ rental_record.uav }} on {{ rental_record.rental_date }}. Rental was successful!</p>
+  {% endif %}
+  <ul class="list-group">
+    {% for uav in uavs %}
+    <li class="list-group-item">{{ uav.brand }} {{ uav.model }} - {{ uav.category }}
+      <a href="{% url 'update_uav' uav.id %}" class="btn btn-primary btn-sm">Edit</a>
+      <a href="{% url 'delete_uav' uav.id %}" class="btn btn-danger btn-sm">Delete</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endblock %}
-
