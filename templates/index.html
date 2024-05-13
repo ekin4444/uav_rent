@@ -4,1153 +4,851 @@
 
 <head>
     <meta charset="utf-8">
+    <title>Rent UAV</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <title>EstateAgency Bootstrap Template - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+          rel="stylesheet">
 
-    <!-- Favicons -->
-    <link href="static/img/favicon.png" rel="icon">
-    <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet"/>
 
-    <!-- Vendor CSS Files -->
-    <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Template Stylesheet -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- =======================================================
-    * Template Name: EstateAgency
-    * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-    * Updated: Mar 17 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
-
-<!-- ======= Property Search Section ======= -->
-<div class="click-closed"></div>
-<!--/ Form Search Star /-->
-<div class="box-collapse">
-    <div class="title-box-d">
-        <h3 class="title-d">Search Property</h3>
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+    <div class="row">
+        <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
+                <span class="text-body">|</span>
+                <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-body px-3" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-body px-3" href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="text-body px-3" href="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-body px-3" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-body pl-3" href="">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
     </div>
-    <span class="close-box-collapse right-boxed bi bi-x"></span>
-    <div class="box-collapse-wrap form">
-        <form class="form-a">
-            <div class="row">
-                <div class="col-md-12 mb-2">
-                    <div class="form-group">
-                        <label class="pb-2" for="Type">Keyword</label>
-                        <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="position-relative px-lg-5" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                <h1 class="text-uppercase text-primary mb-1">Royal Cars</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cars</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="uavs.html" class="dropdown-item">UAV Listing</a>
+                            <a href="detail.html" class="dropdown-item">UAV Detail</a>
+                            <a href="rent_uav.html" class="dropdown-item">UAV Renting</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="Type">Type</label>
-                        <select class="form-control form-select form-control-a" id="Type">
-                            <option>All Type</option>
-                            <option>For Rent</option>
-                            <option>For Sale</option>
-                            <option>Open House</option>
-                        </select>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="city">City</label>
-                        <select class="form-control form-select form-control-a" id="city">
-                            <option>All City</option>
-                            <option>Alabama</option>
-                            <option>Arizona</option>
-                            <option>California</option>
-                            <option>Colorado</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="bedrooms">Bedrooms</label>
-                        <select class="form-control form-select form-control-a" id="bedrooms">
-                            <option>Any</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="garages">Garages</label>
-                        <select class="form-control form-select form-control-a" id="garages">
-                            <option>Any</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="bathrooms">Bathrooms</label>
-                        <select class="form-control form-select form-control-a" id="bathrooms">
-                            <option>Any</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="price">Min Price</label>
-                        <select class="form-control form-select form-control-a" id="price">
-                            <option>Unlimite</option>
-                            <option>$50,000</option>
-                            <option>$100,000</option>
-                            <option>$150,000</option>
-                            <option>$200,000</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-b">Search Property</button>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
-        </form>
+        </nav>
     </div>
-</div><!-- End Property Search Section -->>
+</div>
+<!-- Navbar End -->
 
-<!-- ======= Header/Navbar ======= -->
-<nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-    <div class="container">
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
-                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
 
-        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-            <ul class="navbar-nav">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link " href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link " href="property-grid.html">Property</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link " href="blog-grid.html">Blog</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item " href="property-single.html">Property Single</a>
-                        <a class="dropdown-item " href="blog-single.html">Blog Single</a>
-                        <a class="dropdown-item " href="agents-grid.html">Agents Grid</a>
-                        <a class="dropdown-item " href="agent-single.html">Agent Single</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
-                </li>
-            </ul>
+<!-- Search Start -->
+<div class="container-fluid bg-white pt-3 px-lg-5">
+    <div class="row mx-n2">
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+            <label>
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Pickup Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </label>
         </div>
-
-        <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo01">
-            <i class="bi bi-search"></i>
-        </button>
-
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+            <label>
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Drop Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </label>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+            <div class="date mb-3" id="date" data-target-input="nearest">
+                <label>
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
+                           data-target="#date" data-toggle="datetimepicker"/>
+                </label>
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+            <div class="time mb-3" id="time" data-target-input="nearest">
+                <label>
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                           data-target="#time" data-toggle="datetimepicker"/>
+                </label>
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+            <label>
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Select A Car</option>
+                    <option value="1">Car 1</option>
+                    <option value="2">Car 1</option>
+                    <option value="3">Car 1</option>
+                </select>
+            </label>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+            <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+        </div>
     </div>
-</nav><!-- End Header/Navbar -->
+</div>
+<!-- Search End -->
 
-<!-- ======= Intro Section ======= -->
-<div class="intro intro-carousel swiper position-relative">
 
-    <div class="swiper-wrapper">
-
-        <div class="swiper-slide carousel-item-a intro-item bg-image"
-             style="background-image: url(static/img/slide-1.jpg)">
-            <div class="overlay overlay-a"></div>
-            <div class="intro-content display-table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="intro-body">
-                                    <p class="intro-title-top">Doral, Florida
-                                        <br> 78345
-                                    </p>
-                                    <h1 class="intro-title mb-4 ">
-                                        <span class="color-b">204 </span> Mount
-                                        <br> Olive Road Two
-                                    </h1>
-                                    <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<!-- Carousel Start -->
+<div class="container-fluid p-0" style="margin-bottom: 90px;">
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="static/img/carousel-1.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
+                        <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Your Location</h1>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="static/img/carousel-2.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
+                        <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide carousel-item-a intro-item bg-image"
-             style="background-image: url(static/img/slide-2.jpg)">
-            <div class="overlay overlay-a"></div>
-            <div class="intro-content display-table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="intro-body">
-                                    <p class="intro-title-top">Doral, Florida
-                                        <br> 78345
-                                    </p>
-                                    <h1 class="intro-title mb-4">
-                                        <span class="color-b">204 </span> Rino
-                                        <br> Venda Road Five
-                                    </h1>
-                                    <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                <span class="carousel-control-prev-icon mb-n2"></span>
+            </div>
+        </a>
+        <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                <span class="carousel-control-next-icon mb-n2"></span>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-1 text-primary text-center">01</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span>
+        </h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <img class="w-75 mb-4" src="static/img/about.png" alt="">
+                <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum
+                    sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet,
+                    amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos
+                    sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam
+                    eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr
+                    accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at
+                    et.</p>
             </div>
         </div>
-        <div class="swiper-slide carousel-item-a intro-item bg-image"
-             style="background-image: url(static/img/slide-3.jpg)">
-            <div class="overlay overlay-a"></div>
-            <div class="intro-content display-table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="intro-body">
-                                    <p class="intro-title-top">Doral, Florida
-                                        <br> 78345
-                                    </p>
-                                    <h1 class="intro-title mb-4">
-                                        <span class="color-b">204 </span> Alira
-                                        <br> Roan Road One
-                                    </h1>
-                                    <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row mt-3">
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                         style="width: 100px; height: 100px;">
+                        <i class="fa fa-2x fa-headset text-secondary"></i>
                     </div>
+                    <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                         style="width: 100px; height: 100px;">
+                        <i class="fa fa-2x fa-car text-secondary"></i>
+                    </div>
+                    <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                         style="width: 100px; height: 100px;">
+                        <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                    </div>
+                    <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
                 </div>
             </div>
         </div>
     </div>
-    <div class="swiper-pagination"></div>
-</div><!-- End Intro Section -->
+</div>
+<!-- About End -->
 
-<main id="main">
 
-    <!-- ======= Services Section ======= -->
-    <section class="section-services section-t8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-wrap d-flex justify-content-between">
-                        <div class="title-box">
-                            <h2 class="title-a">Our Services</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card-box-c foo">
-                        <div class="card-header-c d-flex">
-                            <div class="card-box-ico">
-                                <span class="bi bi-cart"></span>
-                            </div>
-                            <div class="card-title-c align-self-center">
-                                <h2 class="title-c">Lifestyle</h2>
-                            </div>
-                        </div>
-                        <div class="card-body-c">
-                            <p class="content-c">
-                                Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien
-                                massa,
-                                convallis a pellentesque
-                                nec, egestas non nisi.
-                            </p>
-                        </div>
-                        <div class="card-footer-c">
-                            <a href="#" class="link-c link-icon">Read more
-                                <span class="bi bi-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-c foo">
-                        <div class="card-header-c d-flex">
-                            <div class="card-box-ico">
-                                <span class="bi bi-calendar4-week"></span>
-                            </div>
-                            <div class="card-title-c align-self-center">
-                                <h2 class="title-c">Loans</h2>
-                            </div>
-                        </div>
-                        <div class="card-body-c">
-                            <p class="content-c">
-                                Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.
-                                Mauris blandit
-                                aliquet elit, eget tincidunt
-                                nibh pulvinar a.
-                            </p>
-                        </div>
-                        <div class="card-footer-c">
-                            <a href="#" class="link-c link-icon">Read more
-                                <span class="bi bi-calendar4-week"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-c foo">
-                        <div class="card-header-c d-flex">
-                            <div class="card-box-ico">
-                                <span class="bi bi-card-checklist"></span>
-                            </div>
-                            <div class="card-title-c align-self-center">
-                                <h2 class="title-c">Sell</h2>
-                            </div>
-                        </div>
-                        <div class="card-body-c">
-                            <p class="content-c">
-                                Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien
-                                massa,
-                                convallis a pellentesque
-                                nec, egestas non nisi.
-                            </p>
-                        </div>
-                        <div class="card-footer-c">
-                            <a href="#" class="link-c link-icon">Read more
-                                <span class="bi bi-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Latest Properties Section ======= -->
-    <section class="section-property section-t8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-wrap d-flex justify-content-between">
-                        <div class="title-box">
-                            <h2 class="title-a">Latest Properties</h2>
-                        </div>
-                        <div class="title-link">
-                            <a href="property-grid.html">All Property
-                                <span class="bi bi-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="property-carousel" class="swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="carousel-item-b swiper-slide">
-                        <div class="card-box-a card-shadow">
-                            <div class="img-box-a">
-                                <img src="static/img/property-6.jpg" alt="" class="img-a img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-overlay-a-content">
-                                    <div class="card-header-a">
-                                        <h2 class="card-title-a">
-                                            <a href="property-single.html">206 Mount
-                                                <br/> Olive Road Two</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-body-a">
-                                        <div class="price-box d-flex">
-                                            <span class="price-a">rent | $ 12.000</span>
-                                        </div>
-                                        <a href="#" class="link-a">Click here to view
-                                            <span class="bi bi-chevron-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer-a">
-                                        <ul class="card-info d-flex justify-content-around">
-                                            <li>
-                                                <h4 class="card-info-title">Area</h4>
-                                                <span>340m
-                            <sup>2</sup>
-                          </span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-b swiper-slide">
-                        <div class="card-box-a card-shadow">
-                            <div class="img-box-a">
-                                <img src="static/img/property-3.jpg" alt="" class="img-a img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-overlay-a-content">
-                                    <div class="card-header-a">
-                                        <h2 class="card-title-a">
-                                            <a href="property-single.html">157 West
-                                                <br/> Central Park</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-body-a">
-                                        <div class="price-box d-flex">
-                                            <span class="price-a">rent | $ 12.000</span>
-                                        </div>
-                                        <a href="property-single.html" class="link-a">Click here to view
-                                            <span class="bi bi-chevron-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer-a">
-                                        <ul class="card-info d-flex justify-content-around">
-                                            <li>
-                                                <h4 class="card-info-title">Area</h4>
-                                                <span>340m
-                            <sup>2</sup>
-                          </span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-b swiper-slide">
-                        <div class="card-box-a card-shadow">
-                            <div class="img-box-a">
-                                <img src="static/img/property-7.jpg" alt="" class="img-a img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-overlay-a-content">
-                                    <div class="card-header-a">
-                                        <h2 class="card-title-a">
-                                            <a href="property-single.html">245 Azabu
-                                                <br/> Nishi Park let</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-body-a">
-                                        <div class="price-box d-flex">
-                                            <span class="price-a">rent | $ 12.000</span>
-                                        </div>
-                                        <a href="property-single.html" class="link-a">Click here to view
-                                            <span class="bi bi-chevron-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer-a">
-                                        <ul class="card-info d-flex justify-content-around">
-                                            <li>
-                                                <h4 class="card-info-title">Area</h4>
-                                                <span>340m
-                            <sup>2</sup>
-                          </span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-b swiper-slide">
-                        <div class="card-box-a card-shadow">
-                            <div class="img-box-a">
-                                <img src="static/img/property-10.jpg" alt="" class="img-a img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-overlay-a-content">
-                                    <div class="card-header-a">
-                                        <h2 class="card-title-a">
-                                            <a href="property-single.html">204 Montal
-                                                <br/> South Bela Two</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-body-a">
-                                        <div class="price-box d-flex">
-                                            <span class="price-a">rent | $ 12.000</span>
-                                        </div>
-                                        <a href="property-single.html" class="link-a">Click here to view
-                                            <span class="bi bi-chevron-right"></span>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer-a">
-                                        <ul class="card-info d-flex justify-content-around">
-                                            <li>
-                                                <h4 class="card-info-title">Area</h4>
-                                                <span>340m
-                            <sup>2</sup>
-                          </span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-                </div>
-            </div>
-            <div class="propery-carousel-pagination carousel-pagination"></div>
-
-        </div>
-    </section><!-- End Latest Properties Section -->
-
-    <!-- ======= Agents Section ======= -->
-    <section class="section-agents section-t8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-wrap d-flex justify-content-between">
-                        <div class="title-box">
-                            <h2 class="title-a">Best Agents</h2>
-                        </div>
-                        <div class="title-link">
-                            <a href="agents-grid.html">All Agents
-                                <span class="bi bi-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card-box-d">
-                        <div class="card-img-d">
-                            <img src="static/img/agent-4.jpg" alt="" class="img-d img-fluid">
-                        </div>
-                        <div class="card-overlay card-overlay-hover">
-                            <div class="card-header-d">
-                                <div class="card-title-d align-self-center">
-                                    <h3 class="title-d">
-                                        <a href="agent-single.html" class="link-two">Margaret Sotillo
-                                            <br> Escala</a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="card-body-d">
-                                <p class="content-d color-text-a">
-                                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                                </p>
-                                <div class="info-agents color-a">
-                                    <p>
-                                        <strong>Phone: </strong> +54 356 945234
-                                    </p>
-                                    <p>
-                                        <strong>Email: </strong> agents@example.com
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-footer-d">
-                                <div class="socials-footer d-flex justify-content-center">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-facebook" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-linkedin" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-d">
-                        <div class="card-img-d">
-                            <img src="static/img/agent-1.jpg" alt="" class="img-d img-fluid">
-                        </div>
-                        <div class="card-overlay card-overlay-hover">
-                            <div class="card-header-d">
-                                <div class="card-title-d align-self-center">
-                                    <h3 class="title-d">
-                                        <a href="agent-single.html" class="link-two">Stiven Spilver
-                                            <br> Darw</a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="card-body-d">
-                                <p class="content-d color-text-a">
-                                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                                </p>
-                                <div class="info-agents color-a">
-                                    <p>
-                                        <strong>Phone: </strong> +54 356 945234
-                                    </p>
-                                    <p>
-                                        <strong>Email: </strong> agents@example.com
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-footer-d">
-                                <div class="socials-footer d-flex justify-content-center">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-facebook" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-linkedin" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-d">
-                        <div class="card-img-d">
-                            <img src="static/img/agent-5.jpg" alt="" class="img-d img-fluid">
-                        </div>
-                        <div class="card-overlay card-overlay-hover">
-                            <div class="card-header-d">
-                                <div class="card-title-d align-self-center">
-                                    <h3 class="title-d">
-                                        <a href="agent-single.html" class="link-two">Emma Toledo
-                                            <br> Cascada</a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="card-body-d">
-                                <p class="content-d color-text-a">
-                                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                                </p>
-                                <div class="info-agents color-a">
-                                    <p>
-                                        <strong>Phone: </strong> +54 356 945234
-                                    </p>
-                                    <p>
-                                        <strong>Email: </strong> agents@example.com
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-footer-d">
-                                <div class="socials-footer d-flex justify-content-center">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-facebook" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="link-one">
-                                                <i class="bi bi-linkedin" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Agents Section -->
-
-    <!-- ======= Latest News Section ======= -->
-    <section class="section-news section-t8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-wrap d-flex justify-content-between">
-                        <div class="title-box">
-                            <h2 class="title-a">Latest News</h2>
-                        </div>
-                        <div class="title-link">
-                            <a href="blog-grid.html">All News
-                                <span class="bi bi-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="news-carousel" class="swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="carousel-item-c swiper-slide">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="static/img/post-2.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">House</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="blog-single.html">House is comming
-                                                <br> new</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-c swiper-slide">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="static/img/post-5.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">Travel</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="blog-single.html">Travel is comming
-                                                <br> new</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-c swiper-slide">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="static/img/post-7.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">Park</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="blog-single.html">Park is comming
-                                                <br> new</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-c swiper-slide">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="static/img/post-3.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">Travel</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="#">Travel is comming
-                                                <br> new</a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                </div>
-            </div>
-
-            <div class="news-carousel-pagination carousel-pagination"></div>
-        </div>
-    </section><!-- End Latest News Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section class="section-testimonials section-t8 nav-arrow-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-wrap d-flex justify-content-between">
-                        <div class="title-box">
-                            <h2 class="title-a">Testimonials</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="testimonial-carousel" class="swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="carousel-item-a swiper-slide">
-                        <div class="testimonials-box">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="testimonial-img">
-                                        <img src="static/img/testimonial-1.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="testimonial-ico">
-                                        <i class="bi bi-chat-quote-fill"></i>
-                                    </div>
-                                    <div class="testimonials-content">
-                                        <p class="testimonial-text">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate
-                                            ea nam praesentium
-                                            debitis hic ber quibusdam
-                                            voluptatibus officia expedita corpori.
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-box">
-                                        <img src="static/img/mini-testimonial-1.jpg" alt="" class="testimonial-avatar">
-                                        <h5 class="testimonial-author">Albert & Erika</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                    <div class="carousel-item-a swiper-slide">
-                        <div class="testimonials-box">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="testimonial-img">
-                                        <img src="static/img/testimonial-2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="testimonial-ico">
-                                        <i class="bi bi-chat-quote-fill"></i>
-                                    </div>
-                                    <div class="testimonials-content">
-                                        <p class="testimonial-text">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate
-                                            ea nam praesentium
-                                            debitis hic ber quibusdam
-                                            voluptatibus officia expedita corpori.
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-box">
-                                        <img src="static/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar">
-                                        <h5 class="testimonial-author">Pablo & Emma</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End carousel item -->
-
-                </div>
-            </div>
-            <div class="testimonial-carousel-pagination carousel-pagination"></div>
-
-        </div>
-    </section><!-- End Testimonials Section -->
-
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<section class="section-footer">
-    <div class="container">
+<!-- Services Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-1 text-primary text-center">02</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
         <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <div class="widget-a">
-                    <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">EstateAgency</h3>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-taxi text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">01</h1>
                     </div>
-                    <div class="w-body-a">
-                        <p class="w-text-a color-text-a">
-                            Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
-                            consequat duis
-                            sed aute irure.
-                        </p>
+                    <h4 class="text-uppercase mb-3">Car Rental</h4>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">02</h1>
                     </div>
-                    <div class="w-footer-a">
-                        <ul class="list-unstyled">
-                            <li class="color-a">
-                                <span class="color-text-a">Phone .</span> contact@example.com
-                            </li>
-                            <li class="color-a">
-                                <span class="color-text-a">Email .</span> +54 356 945234
-                            </li>
-                        </ul>
+                    <h4 class="text-uppercase mb-3">Car Financing</h4>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Car Inspection</h4>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-cogs text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Auto Repairing</h4>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-spray-can text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Auto Painting</h4>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-pump-soap text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+<!-- Banner Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="bg-banner py-5 px-4 text-center">
+            <div class="py-5">
+                <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
+                <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
+                <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
+                <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+
+<!-- Rent A Car Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-1 text-primary text-center">03</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="static/img/car-rent-1.png" alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item active mb-4">
+                    <img class="img-fluid mb-4" src="static/img/car-rent-2.png" alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="static/img/car-rent-3.png" alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="static/img/car-rent-4.png" alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="static/img/car-rent-5.png" alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                    <img class="img-fluid mb-4" src="static/img/car-rent-6.png" alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Rent A Car End -->
+
+
+<!-- Team Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <h1 class="display-1 text-primary text-center">04</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
+        <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+            <div class="team-item">
+                <img class="img-fluid w-100" src="static/img/team-1.jpg" alt="">
+                <div class="position-relative py-4">
+                    <h4 class="text-uppercase">Full Name</h4>
+                    <p class="m-0">Designation</p>
+                    <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 section-md-t3">
-                <div class="widget-a">
-                    <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">The Company</h3>
+            <div class="team-item">
+                <img class="img-fluid w-100" src="static/img/team-2.jpg" alt="">
+                <div class="position-relative py-4">
+                    <h4 class="text-uppercase">Full Name</h4>
+                    <p class="m-0">Designation</p>
+                    <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="w-body-a">
-                        <div class="w-body-a">
-                            <ul class="list-unstyled">
-                                <li class="item-list-a">
-                                    <i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
-                                </li>
-                            </ul>
+                </div>
+            </div>
+            <div class="team-item">
+                <img class="img-fluid w-100" src="static/img/team-3.jpg" alt="">
+                <div class="position-relative py-4">
+                    <h4 class="text-uppercase">Full Name</h4>
+                    <p class="m-0">Designation</p>
+                    <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <img class="img-fluid w-100" src="static/img/team-4.jpg" alt="">
+                <div class="position-relative py-4">
+                    <h4 class="text-uppercase">Full Name</h4>
+                    <p class="m-0">Designation</p>
+                    <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
+<!-- Banner Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row mx-0">
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="static/img/banner-left.png" alt="">
+                    <div class="text-right">
+                        <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
+                        <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                        <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <div class="text-left">
+                        <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
+                        <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                        <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                    </div>
+                    <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="static/img/banner-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <h1 class="display-1 text-primary text-center">05</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="static/img/testimonial-1.jpg" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor
+                    amet sit sea sed</p>
+            </div>
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="static/img/testimonial-2.jpg" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor
+                    amet sit sea sed</p>
+            </div>
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="static/img/testimonial-3.jpg" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor
+                    amet sit sea sed</p>
+            </div>
+            <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <img class="img-fluid ml-n4" src="static/img/testimonial-4.jpg" alt="">
+                    <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                </div>
+                <h4 class="text-uppercase mb-2">Client Name</h4>
+                <i class="mb-2">Profession</i>
+                <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor
+                    amet sit sea sed</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+<!-- Contact Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-1 text-primary text-center">06</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+        <div class="row">
+            <div class="col-lg-7 mb-2">
+                <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                    <form>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>
+                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required">
+                                </label>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>
+                                    <input type="email" class="form-control p-4" placeholder="Your Email"
+                                           required="required">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+<textarea class="form-control py-3 px-4" rows="5" placeholder="Message"
+          required="required"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5 mb-2">
+                <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                    <div class="d-flex mb-3">
+                        <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                        <div class="mt-n1">
+                            <h5 class="text-light">Head Office</h5>
+                            <p>123 Street, New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                        <div class="mt-n1">
+                            <h5 class="text-light">Branch Office</h5>
+                            <p>123 Street, New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                        <div class="mt-n1">
+                            <h5 class="text-light">Customer Service</h5>
+                            <p>customer@example.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                        <div class="mt-n1">
+                            <h5 class="text-light">Return & Refund</h5>
+                            <p class="m-0">refund@example.com</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 section-md-t3">
-                <div class="widget-a">
-                    <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">International sites</h3>
-                    </div>
-                    <div class="w-body-a">
-                        <ul class="list-unstyled">
-                            <li class="item-list-a">
-                                <i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a>
-                            </li>
-                            <li class="item-list-a">
-                                <i class="bi bi-chevron-right"></i> <a href="#">China</a>
-                            </li>
-                            <li class="item-list-a">
-                                <i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a>
-                            </li>
-                            <li class="item-list-a">
-                                <i class="bi bi-chevron-right"></i> <a href="#">Argentina</a>
-                            </li>
-                            <li class="item-list-a">
-                                <i class="bi bi-chevron-right"></i> <a href="#">Singapore</a>
-                            </li>
-                            <li class="item-list-a">
-                                <i class="bi bi-chevron-right"></i> <a href="#">Philippines</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+<!-- Vendor Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="owl-carousel vendor-carousel">
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-1.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-2.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-3.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-4.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-5.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-6.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-7.png" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="static/img/vendor-8.png" alt="">
             </div>
         </div>
     </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="nav-footer">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Property</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="socials-a">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-facebook" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-twitter" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-instagram" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
+</div>
+<!-- Vendor End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>123 Street, New York, USA</p>
+            <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope text-white mr-3"></i>info@example.com</p>
+            <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
+                <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term &
+                    Conditions</a>
+                <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member
+                    Registration</a>
+                <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
+                <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
+                <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+            <div class="row mx-n1">
+                <div class="col-4 px-1 mb-2">
+                    <a href=""><img class="w-100" src="static/img/gallery-1.jpg" alt=""></a>
                 </div>
-                <div class="copyright-footer">
-                    <p class="copyright color-text-a">
-                        &copy; Copyright
-                        <span class="color-a">EstateAgency</span> All Rights Reserved.
-                    </p>
+                <div class="col-4 px-1 mb-2">
+                    <a href=""><img class="w-100" src="static/img/gallery-2.jpg" alt=""></a>
                 </div>
-                <div class="credits">
-                    <!--
-                    All the links in the footer should remain intact.
-                    You can delete the links only if you purchased the pro version.
-                    Licensing information: https://bootstrapmade.com/license/
-                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-                  -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <div class="col-4 px-1 mb-2">
+                    <a href=""><img class="w-100" src="static/img/gallery-3.jpg" alt=""></a>
+                </div>
+                <div class="col-4 px-1 mb-2">
+                    <a href=""><img class="w-100" src="static/img/gallery-4.jpg" alt=""></a>
+                </div>
+                <div class="col-4 px-1 mb-2">
+                    <a href=""><img class="w-100" src="static/img/gallery-5.jpg" alt=""></a>
+                </div>
+                <div class="col-4 px-1 mb-2">
+                    <a href=""><img class="w-100" src="static/img/gallery-6.jpg" alt=""></a>
                 </div>
             </div>
         </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+            <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd
+                et</p>
+            <div class="w-100 mb-3">
+                <div class="input-group">
+                    <label>
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;"
+                               placeholder="Your Email">
+                    </label>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <i>Lorem sit sed elitr sed kasd et</i>
+        </div>
     </div>
-</footer><!-- End  Footer -->
+</div>
+<div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+    <p class="mb-2 text-center text-body">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
 
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+    <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+</div>
+<!-- Footer End -->
 
-<!-- Vendor JS Files -->
-<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="static/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="static/vendor/php-email-form/validate.js"></script>
 
-<!-- Template Main JS File -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="static/lib/easing/easing.min.js"></script>
+<script src="static/lib/waypoints/waypoints.min.js"></script>
+<script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="static/lib/tempusdominus/js/moment.min.js"></script>
+<script src="static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
 <script src="static/js/main.js"></script>
-
 </body>
 
 </html>
