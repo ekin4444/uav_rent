@@ -1,8 +1,3 @@
-FROM ubuntu:latest
-LABEL authors="ekinf"
-
-ENTRYPOINT ["top", "-b"]
-
 FROM python:3.12-slim
 
 RUN apt-get update
